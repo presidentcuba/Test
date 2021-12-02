@@ -5,11 +5,15 @@ h5 {
     padding: 0px !important;
     margin: 0px;
 }
+.row {
+    margin: 0px !important;
+}
 .footer {
     margin-top: 50px;
     .footer_content {
         .footer_top {
             .row {
+                margin: 0px !important;
                 .item {
                     p {
                         width: 40%;
@@ -17,6 +21,7 @@ h5 {
                         line-height: 2;
                     }
                     .row {
+                        margin: 0!important;
                         ul {
                             padding: 0px;
                             li {

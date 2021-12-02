@@ -1,0 +1,84 @@
+.products {
+    margin-top: 100px;
+    .products_content {
+        .item {
+            padding: 0px 10px;
+            margin-bottom: 20px;
+            .image {
+                overflow: hidden;
+                img {
+                    width: 100%;
+                    transform: scale(1);
+                    transition: all 0.5s;
+                    &:hover {
+                        transform: scale(1.1);
+                    }
+                }
+            }
+            .thread {
+                margin-top: 20px;
+                .thread_title {
+                    h5 {
+                        @include text($color-black-3, $fs-16, $fw-bold-0);
+                    }
+                }
+                .thread_price {
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-between;
+                    .price {
+                        @include text($color-black-3, $fs-16, $fw-normal);
+                    }
+                    .seen {
+                        display: flex;
+                        align-items: center;
+                        .heart {
+                            margin-right: 3px;
+                            @include text($color-orange-2, $fs-16, $fw-normal);
+                           
+                        }
+                    }
+                }
+            }
+        }
+
+    }
+    .btn_seemore {
+        text-align: center;
+        margin: 50px 0px;
+        a {
+            @include text($color-black-3, $fs-23, $fw-bold-0);
+            padding: $pd-1 $pd-2;
+            border: 3px solid $color-dark;
+        }
+    }
+}
+.col-xl-12d5 {
+    flex: 0 0 auto;
+    width: 20%;
+    max-width: 9999px;
+}
+@include responsive("extra-large"){
+   
+}
+@include responsive("large"){
+    .col-xl-12d5 {
+        flex: 0 0 auto;
+        width: 33.33%;
+        max-width: 9999px;
+    }
+}
+@include responsive("medium"){
+    .col-xl-12d5 {
+        flex: 0 0 auto;
+        width: 50%;
+        max-width: 9999px;
+    }
+}
+@include responsive("small"){
+    .col-xl-12d5 {
+        flex: 0 0 auto;
+        width: 100%;
+        max-width: 9999px;
+    }
+}

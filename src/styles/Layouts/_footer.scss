@@ -1,0 +1,111 @@
+h5 {
+    @include text($color-black-2, $fs-1, $fw-bold);
+}
+.col-md-6, .col-12 , .col-sm-3, .col-6 {
+    padding: 0px !important;
+    margin: 0px;
+}
+.footer {
+    margin-top: 50px;
+    .footer_content {
+        .footer_top {
+            .row {
+                .item {
+                    p {
+                        width: 40%;
+                        @include text($color-black-2, $fs-1, $fw-bold-300);
+                        line-height: 2;
+                    }
+                    .row {
+                        ul {
+                            padding: 0px;
+                            li {
+                                list-style: none;
+                                line-height: 2;
+                                a {
+                                    @include text($color-black-2, $fs-1, $fw-bold-300);
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .footer_bot {
+            padding: 5px 0px;
+            display: flex;
+            align-items: center;
+            border-top: 1px solid $color-white-3;
+            .content {
+                flex: 1;
+                @include text($color-gray-4, $fs-1, $fw-bold-300);
+            }
+            .icon {
+                flex: 1;
+                text-align: right;
+                img {
+                    margin: 0px 3px;
+                }
+            }
+        }
+    }
+}
+@include responsive("extra-large"){
+   
+}
+@include responsive("large"){
+  
+}
+@include responsive("medium"){
+    .footer {
+        margin-top: 50px;
+        padding: 20px;
+        .footer_content {
+            .footer_top {
+                .row {
+                    padding: 0px;
+                    margin: 0px;
+                    .item {
+                        p {
+                            width: 100%;
+                            @include text($color-black-2, $fs-1, $fw-bold-300);
+                            line-height: 2;
+                        }
+                        .row {
+                            ul {
+                                padding: 0px;
+                                li {
+                                    list-style: none;
+                                    line-height: 2;
+                                    a {
+                                        @include text($color-black-2, $fs-1, $fw-bold-300);
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            .footer_bot {
+                padding: 5px 0px;
+                display: flex;
+                align-items: center;
+                border-top: 1px solid $color-white-3;
+                .content {
+                    flex: 1;
+                    @include text($color-gray-4, $fs-1, $fw-bold-300);
+                }
+                .icon {
+                    flex: 1;
+                    text-align: right;
+                    img {
+                        margin: 0px 3px;
+                    }
+                }
+            }
+        }
+    }
+}
+@include responsive("small"){
+    
+}

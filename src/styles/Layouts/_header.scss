@@ -1,0 +1,148 @@
+.width-default {
+    max-width: 1205px;
+    width: 100%;
+    height: 100%;
+    margin: auto;
+}
+a:link {
+    text-decoration: none;
+}
+.header {
+    background-color: $color-black-2;
+    height: 80px;
+    .row {
+        align-items: center;
+        height: 100%;
+    }
+    .header_content {
+        height: 100%;
+        .header_content_left {
+            a {
+                margin-bottom: 0px;
+                cursor: pointer;
+                img {
+                    width: 226px;
+                    height: 26px;
+                    object-fit: cover;
+                }
+            }
+        }
+        .header_content_right {
+            .header_content_menu {
+                .icon_menu {
+                    display: none;
+                }
+            }
+            ul {
+                display: flex;
+                align-items: center;
+                justify-content: flex-end;
+                padding: $pd;
+                margin: $mg;
+                .icon_close {
+                    .icon_close_menu {
+                        display: none;
+                    }
+                }
+                li {
+                    list-style: none;
+                    padding: $pd-1 $pd;
+                    a {
+                        @include text($color-white-0, $fs-1, $fw-bold-0);
+                        display: block;
+                        cursor: pointer;
+                        padding: $pd $pd-1;
+                        &:hover {
+                            @include text($color-white-0, $fs-1, $fw-bold-0);
+                        }
+                    }
+                    .login {
+                        border-left: 1px solid $color-gray-2;
+                    }
+                }
+            }
+        }
+    }
+   
+}
+@include responsive("extra-large"){
+   
+}
+@include responsive("large"){
+    .header {
+        padding: $pd-1;
+        .header_content {
+            .header_content_right {
+                display: flex;
+                justify-content: flex-end;
+                .header_content_menu {
+                    width: 35px;
+                    height: 35px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    border: 1px solid $color-white-0;
+                    .icon_menu {
+                        display: block;
+                        color: $color-white-0;
+                        font-size: $fs-3;
+                    }
+                }
+                .show_menu {
+                    right: 0;
+                    opacity: 1;
+                    padding: $pd-1 0px;
+                }
+                
+                ul {
+                    flex-direction: column;
+                    justify-content: start;
+                    position: fixed;
+                    opacity: 0;
+                    top: 0;
+                    right: -260px;
+                    width: 250px;
+                    height: 100%;
+                    z-index: 999;
+                    transition: all .5s;
+                    background-color: $color-white-0;
+                    box-shadow: 0 4px 16px rgb(20 23 28 / 25%);
+                    .icon_close {
+                        position: absolute;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        top: 5px;
+                        left: -35px;
+                        width: 30px;
+                        height: 30px;
+                        border-radius: 50%;
+                        background-color: $color-white-0;
+                        .icon_close_menu {
+                            display: block;
+                        }
+                    }
+                    li {
+                        padding: $pd-1 0px;
+                         a {
+                            @include text($color-black-1, $fs-1, $fw-bold-0);
+                            &:hover {
+                                @include text($color-black-1, $fs-1, $fw-bold-0);
+                            }
+                         }
+                        .login {
+                            border-left: unset;
+                        }
+                    }
+                }
+            }
+        }
+       
+    }
+}
+@include responsive("medium"){
+        
+}
+@include responsive("small"){
+    
+}

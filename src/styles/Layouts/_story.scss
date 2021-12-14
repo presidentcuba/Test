@@ -1,29 +1,42 @@
 .story {
-    background-image: url('../../images/brand.jpg');
-    background-position: center center;
-    background-repeat: no-repeat;
-    background-size: 100% 100%;
-    height: 900px;
+    position: relative;
+    .story_image {
+        img {
+            max-width: 1920px;
+            width: 100%;
+            text-align: center;
+        }
+    }
     .story_content {
-        width: 70%;
-        margin: auto;
-        padding-top: 100px;
+        position: absolute;
+        top: 149px;
+        left: 335px;
         .story_title {
-            width: 85%;
-            margin: auto;
             text-align: center;
             h3 {
                 text-transform: uppercase; 
                 letter-spacing: 1.5px;
+                line-height: 60px;
+                margin-bottom: 40px;
                 @include text($color-yellow, $fs-45, $fw-bold);
             }
-            p {
-                padding-top: 20px;
-                margin-bottom: 70px;
-                @include text($color-yellow, $fs-16, $fw-bold-300);
+            span {
+                display: block;
+                padding-bottom: 77px;
+                p {
+                    line-height: 30px;
+                    @include text($color-yellow, $fs-16, $fw-bold-300);
+                }
             }
         }
         .story_item {
+            max-width: 1253px;
+            height: 421px;
+            width: 100%;
+            margin: auto;
+            display: flex;
+            justify-content: center;
+            border-top: 24px solid $color-black-2;
             .row {
                 padding: 0px !important;
                 margin: 0px !important;
@@ -37,34 +50,30 @@
                 }
             }
             .item {
-                height: 418px;
-                border-top: 24px solid $color-black-2;
                 .item_left {
-                    width: 100%;
-                    height: 100%;
                     border-right: 3px solid $color-black-2;
                     border-left: 3px solid $color-black-2;
                     img {
                         width: 100%;
                         height: 100%;
-                        object-fit: cover;
                     }
                 }
                 .item_right {
+                    padding: 0px 68px;
                     height: 100%;
-                    padding: 30px 25px;
                     background-color: $color-white-0;
                     border-top: 3px solid $color-black-2;
                     border-right: 3px solid $color-black-2;
                     border-bottom: 3px solid $color-black-2;
                     h5 {
                         text-transform: uppercase; 
+                        margin-top: 63px;
                         @include text($color-black-3, $fs-22, $fw-bold-2);
                     }
                     p {
-                        margin-bottom: $mg-1;
-                        line-height: 2;
-                        margin: $mg-2 0px;
+                        line-height: 1.88;
+                        margin-top: 39px;
+                        margin-bottom: 47px;
                         @include text($color-black-3, $fs-16, $fw-bold-300);
                     }
                     a {

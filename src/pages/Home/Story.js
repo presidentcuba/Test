@@ -1,21 +1,25 @@
 import React from 'react'
-import story from 'src/images/img-brand.png'
+import story1 from 'src/images/brand.jpg'
+import story2 from 'src/images/img-brand.png'
 export default function Story() {
     return (
         <div className="story">
+            <div className="story_image">
+                <img src = {story1} alt=""></img>
+            </div>
             <div className="story_content">
                 <div className="story_title">
                     <h3>Brand Story</h3>
-                    <p>
-                        모바일에 최적화된 비디오를 단 몇 분 만에 제작해보세요. 디자이너가 아니더라도,  모든 팀에서
-                        다듬을 수 있습니다. 브랜드의 성공을 위한 첫 걸음을  내딛어보세요. 비디오를 단 몇 분 만에 제작해보세요.
-                    </p>
+                    <span>
+                        <p>모바일에 최적화된 비디오를 단 몇 분 만에 제작해보세요. 디자이너가 아니더라도,  모든 팀에서</p>
+                        <p>다듬을 수 있습니다. 브랜드의 성공을 위한 첫 걸음을  내딛어보세요. 비디오를 단 몇 분 만에 제작해보세요.</p>
+                    </span>
                 </div>
                 <div className="story_item">
                     <div className="row item">
                         <div className="col-md-6 col-sm-12">
                             <div className="item_left">
-                                <img src ={story} alt=""></img>
+                                <img src ={story2} alt=""></img>
                             </div>
                         </div>
                         <div className="col-md-6 col-sm-12">

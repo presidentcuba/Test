@@ -1,8 +1,13 @@
 .slider {
+    background-color: $color-tomato-1;
     .slider_image {
+        display: flex;
+        justify-content: center;
         img {
+            max-width: 1920px;
             width: 100%;
             object-fit: cover;
+            text-align: center;
         }
     }
 }

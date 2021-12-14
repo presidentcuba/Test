@@ -2,23 +2,33 @@
     position: relative;
     .introduction_content {
         .introduction_bg {
+            display: flex;
+            justify-content: center;
+            background-color: #0659c3;
             img {
+                max-width: 1920px;
                 width: 100%;
                 object-fit: cover;
             }
         }
         .introduction_slogan {
             position: absolute;
-            width: 40%;
+            width: 60%;
+            height: 125px;
             top: 22%;
-            left: 13%;
+            left: 174px;
             h5 {
+                text-transform: uppercase;
+                letter-spacing: 5px;
                 @include text($color-white-0, $fs-19, $fw-bold-2);
                 margin-bottom: $mg-16;
             }
             span {
                 @include text($color-white-0, $fs-2, $fw-normal);
-                line-height: 1.75;
+                line-height: 35px;
+                p {
+                    margin-bottom: $mg;
+                }
             }
         }
     }

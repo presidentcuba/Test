@@ -55,7 +55,7 @@ export default function Products() {
     ]
     return (
         <div className="products">
-            <div className="width-default">
+            <div className="width-default1">
                 <div className="products_content">
                     <div className="row">
                             {products.map((item, index) => (

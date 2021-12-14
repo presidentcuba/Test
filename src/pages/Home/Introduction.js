@@ -11,10 +11,10 @@ export default function Introduction() {
                     <div className="content">
                         <h5>What Happened!</h5>
                         <span>
-                            How to create mobile-optimized videos in minutes. Not a designer, 
-                            every team makes a lot of videos Can be trimmed. Take the first 
-                            step to your brand's success. How to create 
-                            mobile-optimized videos in minutes.
+                            <p>How to create mobile-optimized videos in minutes. Not a designer,</p>
+                            <p>every team makes a lot of videos Can be trimmed. Take the first</p>
+                            <p>step to your brand's success. How to create</p>
+                            <p>mobile-optimized videos in minutes.</p>
                         </span>
                     </div>
                 </div>

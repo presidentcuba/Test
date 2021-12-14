@@ -3,7 +3,7 @@
     .products_content {
         .item {
             padding: 0px 10px;
-            margin-bottom: 20px;
+            margin-bottom: 30px;
             .image {
                 overflow: hidden;
                 img {
@@ -17,6 +17,7 @@
             }
             .thread {
                 margin-top: 20px;
+                line-height: 35px;
                 .thread_title {
                     h5 {
                         @include text($color-black-3, $fs-16, $fw-bold-0);

@@ -1,24 +1,31 @@
 .best_product {
-    background-image: url('../../images/bg-intro.jpg');
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    padding: 100px 0px;
+    position: relative;
+    .product_image {
+        img {
+            max-width: 1920px;
+            height: 1073px;
+            width: 100%;
+        }
+    }
     .best_product_content { 
+        position: absolute;
+        top: 150px;
+        right: 9%;
         .title {
             display: flex;
             align-items: center;
             justify-content: center;
-            margin-top: -50px;
             .title_content {
                 text-align: center;
                 width: 50%;
                 h3 {
                     letter-spacing: 1.5px;
+                    margin-bottom: 50px;
                     @include text($color-orange-1, $fs-19, $fw-bold);
                 }
                 p {
-                    padding-bottom: 53px;
+                    padding-bottom: 49px;
+                    line-height: 32px;
                     @include text($color-orange-1, $fs-2, $fw-normal)
                 }
             }
@@ -30,14 +37,16 @@
                 position: relative;
                 .image {
                     img {
+                        max-width: 523px;
                         width: 100%;
                     }
                 }
                 .thread {    
                     position: absolute;
                     bottom: -10%;
+                    width: 100%;
                     .thread_box {
-                        width: 90%;
+                        width: 80%;
                         margin: auto;
                         display: flex;
                         align-items: center;
@@ -46,7 +55,8 @@
                         background-color: $color-white-0;
                         padding: 10px 10px;
                         .thread_title {
-                            width: 60%;
+                            width: 50%;
+                            line-height: 25px;
                             margin-bottom: $mg;
                             @include text($color-black-3, $fs-2, $fw-bold-2);
                         }
@@ -69,13 +79,9 @@
                     display: block;
                     position: absolute;
                     top: -45px;
-                    width: 92px;
                     line-height: 80px;
                     text-align: center;
-                    height: 91px;
                     border-radius: 50%;
-                    background-color: $color-gold-yellow;
-                    border: 3px solid $color-brown-dark;
                     p {
                         margin: $mg;
                         display: inline;

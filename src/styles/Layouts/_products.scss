@@ -1,5 +1,5 @@
 .products {
-    margin-top: 100px;
+    margin: 100px 0px;
     .products_content {
         .item {
             padding: 0px 10px;
@@ -49,7 +49,8 @@
         margin: 50px 0px;
         a {
             @include text($color-black-3, $fs-23, $fw-bold-0);
-            padding: $pd-1 $pd-2;
+            padding: 21px 37px;
+            line-height: 25px;
             border: 3px solid $color-dark;
         }
     }

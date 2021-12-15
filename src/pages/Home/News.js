@@ -1,11 +1,12 @@
 import React from 'react'
 import { HiArrowNarrowRight } from 'react-icons/hi'
 import new1 from 'src/images/new1.png'
-import new2 from 'src/images/new2.jpg'
-import new3 from 'src/images/new3.jpg'
-import new4 from 'src/images/new4.jpg'
+import new2 from 'src/images/new2.png'
+import new3 from 'src/images/new3.png'
+import new4 from 'src/images/new4.png'
 import icon1 from 'src/images/iconnew.png'
 import icon2 from 'src/images/iconnew1.png'
+import bg from 'src/images/bg-new.jpg'
 export default function News() {
     const news = [
         {title: "B BRAND", url: new1},
@@ -15,13 +16,16 @@ export default function News() {
     ]
     return (
         <div className="news">
+            <div className="news_image">
+                <img src = {bg} alt=""></img>
+            </div>
             <div className="news_content">
                 <div className="news_title">
                     <h3>Happened’s issue</h3>
-                    <p>
-                        모바일에 최적화된 비디오를 단 몇 분 만에 제작해보세요. 디자이너가 아니더라도,  모든 팀에서
-                        다듬을 수 있습니다. 브랜드의 성공을 위한 첫 걸음을  내딛어보세요. 비디오를 단 몇 분 만에 제작해보세요.
-                    </p>
+                    <span>
+                        <p>모바일에 최적화된 비디오를 단 몇 분 만에 제작해보세요. 디자이너가 아니더라도,  모든 팀에서</p>
+                        <p>다듬을 수 있습니다. 브랜드의 성공을 위한 첫 걸음을  내딛어보세요. 비디오를 단 몇 분 만에 제작해보세요.</p>
+                    </span>
                     <a href="#">SEE MORE</a>
                 </div>
                 <div className="news_item">

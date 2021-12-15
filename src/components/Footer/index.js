@@ -9,16 +9,17 @@ export default function Footer() {
             <div className="footer_content">
               <div className="footer_top">
                 <div className="row">
-                  <div className="col-md-6 col-12 item">
+                  <div className="col-md-7 col-12 item">
                       <h5>what happened</h5>
-                      <p>[공지] 개인 정보 처리 방침 변경 사전 안내
-                          [공지] 29CM 강남 스토어 영업 종료
-                          [공지] 개인 정보 처리 방침 변경 사전 안내
-                          [공지] iOS 10 이하 버전 지원 중단 안내
-                          [공지] 개인 정보 처리 방침 변경 사전 안내
-                      </p>
+                      <span>
+                        <p>[공지] 개인 정보 처리 방침 변경 사전 안내</p>
+                        <p>[공지] 29CM 강남 스토어 영업 종료</p>
+                        <p>[공지] 개인 정보 처리 방침 변경 사전 안내</p>
+                        <p>[공지] iOS 10 이하 버전 지원 중단 안내</p>
+                        <p>[공지] 개인 정보 처리 방침 변경 사전 안내</p>
+                      </span>
                   </div>
-                  <div className="col-md-6 col-12 item">
+                  <div className="col-md-5 col-12 item item_box">
                       <div className="row">
                         <div className="col-sm-3 col-6">
                             <ul>
@@ -63,8 +64,9 @@ export default function Footer() {
               </div>
               <div className="footer_bot">
                   <div className="content">
-                    © 2020-2021 what happened corp  l  (주) 왓헤픈 ｜ 대표자 : 홍길동 ｜ 사업자 등록번호 : 356-00-00000 ㅣ test0101@what happened.co.kr
-                    서울특별시 강남구 도산대로 8길 17 ｜ FAX : 070-0000-0000  l  서비스 이용약관  l  개인정보처리방침
+                    <p>© 2020-2021 what happened corp  l  (주) 왓헤픈 ｜ 대표자 : 홍길동 ｜ 사업자 등록번호 : 356-00-00000 ㅣ test0101@what happened.co.kr</p>
+                    <p> 서울특별시 강남구 도산대로 8길 17 ｜ FAX : 070-0000-0000  l  서비스 이용약관  l  개인정보처리방침</p>
+                   
                   </div>
                   <div className="icon">
                         <img src={icon1}></img>

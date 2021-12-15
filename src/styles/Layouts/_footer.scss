@@ -1,5 +1,6 @@
 h5 {
     @include text($color-black-2, $fs-1, $fw-bold);
+    margin-bottom: 22px;
 }
 .col-md-6, .col-12 , .col-sm-3, .col-6 {
     padding: 0px !important;
@@ -9,17 +10,26 @@ h5 {
     margin: 0px !important;
 }
 .footer {
-    margin-top: 50px;
+    padding: 50px 0px;
     .footer_content {
         .footer_top {
+            margin-bottom: 60px;
             .row {
                 margin: 0px !important;
+                .item_box {
+                    display: flex;
+                    justify-content: flex-end
+                }
                 .item {
-                    p {
-                        width: 40%;
-                        @include text($color-black-2, $fs-1, $fw-bold-300);
-                        line-height: 2;
+                    span {
+                        line-height: 2.14;
+                        p {
+                            margin-bottom: 0px;
+                            @include text($color-black-2, $fs-1, $fw-bold-300);
+                            line-height: 2;
+                        }
                     }
+                   
                     .row {
                         margin: 0!important;
                         ul {
@@ -27,6 +37,8 @@ h5 {
                             li {
                                 list-style: none;
                                 line-height: 2;
+                                width: 100%;
+                                padding-left: 70px;
                                 a {
                                     @include text($color-black-2, $fs-1, $fw-bold-300);
                                 }
@@ -42,14 +54,17 @@ h5 {
             align-items: center;
             border-top: 1px solid $color-white-3;
             .content {
-                flex: 1;
+                width: 60%;
                 @include text($color-gray-4, $fs-1, $fw-bold-300);
+                p {
+                    line-height: 24px;
+                }
             }
             .icon {
-                flex: 1;
+                width: 40%;
                 text-align: right;
                 img {
-                    margin: 0px 3px;
+                    padding-left: 21px;
                 }
             }
         }

@@ -1,10 +1,18 @@
 .news {
-    background-image: url('../../images/bg-new.jpg');
-    background-position: center center;
-    background-repeat: no-repeat;
-    background-size: 100% 100%;
-    padding: 30px 0px;
+    position: relative;
+    background-color: $color-yellow-1;
+    .news_image {
+        img {
+            max-width: 1920px;
+            width: 100%;
+            margin: auto;
+        }
+    }
     .news_content {
+        position: absolute;
+        top: 158px;
+        width: 100%;
+        height: 100%;
         .news_title {
             width: 65%;
             margin: auto;
@@ -12,20 +20,26 @@
             h3 {
                 text-transform: uppercase; 
                 letter-spacing: 2px;
+                padding-bottom: 40px;
                 @include text($color-dark-maroom, $fs-45, $fw-bold);
             }
-            p {
-                padding: $pd-2;
-                @include text($color-dark-maroom, $fs-16, $fw-bold-300);
+            span {
+                display: block;
+                margin-bottom: 76px;
+                p {
+                    margin-bottom: 0px;
+                    line-height: 1.88;
+                    @include text($color-dark-maroom, $fs-16, $fw-bold-300);
+                }
             }
             a {
                 border: 3px solid $color-dark-maroom;
-                padding: $pd-1 $pd-3;
+                padding: 21px 37px;
                 @include text($color-dark-maroom, $fs-23, $fw-bold-2);
             }
         }
         .news_item {
-            padding: 50px 0px;
+            margin-top: 120px;
             .row {
                 padding: 0px;
                 margin: 0px;
@@ -84,8 +98,10 @@
                             background-color: $color-black-2;
                             text-align: center;
                             p {
-                                @include text($color-white-0, $fs-4, $fw-bold-2);
+                                @include text($color-white-0, 30px , $fw-bold-2);
                                 margin-bottom: 0px;
+                                padding: 27px 0px;
+                                line-height: 50px;
                             }
                         }
                         .image {
@@ -135,11 +151,33 @@
         }
     }
 }
+@include responsive("xxl-large"){ }
+        .news {
+            .news_content {
+                top: 10%;
+                .news_item {
+                    margin-top: 50px;
+                    .row {
+                        .col-12d5 {
+                            .one {
+                                .title {
+                                    .icon {
+                                    display: none !important;
+                                    }
+                                }
+                            
+                            }
+                        }
+                    }                 
+                }
+            }
+        }
 @include responsive("extra-large"){
     .news {
+        padding-bottom: 300px;
         .news_content {
             .news_item {
-                margin-top: 50px;
+                margin-top: 100px;
                 .row {
                     .col-12d5 {
                         .one {
@@ -160,9 +198,26 @@
 
 @include responsive("large"){
     .news {
+        padding-bottom: 1000px;
         .news_content {
+            .news_title {
+                span {
+                    display: block;
+                    margin-bottom: 76px;
+                    p {
+                        margin-bottom: 0px;
+                        line-height: 1.88;
+                        @include text($color-dark-maroom, $fs-1, $fw-bold-300);
+                    }
+                }
+                a {
+                    border: 3px solid $color-dark-maroom;
+                    padding: 21px 37px;
+                    @include text($color-dark-maroom, $fs-23, $fw-bold-2);
+                }
+            }
             .news_item {
-                margin-top: 50px;
+                margin-top: 80px;
                 .row {
                     .col-12d5 {
                         flex: 0 0 auto;

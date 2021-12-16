@@ -27,6 +27,7 @@ $color-orange-1:#F96400;
 $color-orange-2:#FA7B26;
 $color-mango-0 : #FFB225;
 $color-mango-1: #FFB227;
+$color-yellow-1: #fccb05;
 $color-yellow: #FCD32A;
 $color-gold-yellow: #FFC717;
 $color-blue:#245FC5;
@@ -65,6 +66,8 @@ $pd-0: 5px; //default
 $pd-1: 11px;
 $pd-2: 20px;
 $pd-3: 30px;
+$pd-36: 36px;
+$pd-4: 40px;
 
 
 //variable line-height
@@ -82,6 +85,7 @@ $fw-bold: bold;
 
 //break points
 $breakpoints:(
+    'xxl-large' : 1441px,
     'extra-large': 1200px,
     'large' : 992px,
     'medium' : 768px,

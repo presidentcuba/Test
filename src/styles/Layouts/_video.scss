@@ -1,36 +1,45 @@
 .video {
-    background-image: url('../../images/videobg.png');
-    background-position: center center;
-    background-repeat: no-repeat;
-    background-size: 100% 100%;
-    padding: 50px 0px;
+    position: relative;
+    .video_image {
+        img {
+            max-width: 1920px;
+            width: 100%;
+        }
+    }
     .video_content {
+        position: absolute;
+        top: 140px;
+        left: 19%;
+        right: 19%;
         .video_title {
-            width: 65%;
-            margin: auto;
             text-align: center;
             h3 {
                 text-transform: uppercase; 
-                letter-spacing: 2px;
+                line-height: 60px;
+                letter-spacing: 10px;
                 @include text($color-black-2, $fs-19, $fw-bold);
             }
-            p {
-                padding: $pd-2;
-                @include text($color-black-2, $fs-2, $fw-bold-300);
+            span {
+                display: block;
+                line-height: 32px;
+                padding: 30px 0px 70px 0px;
+                p {
+                    @include text($color-black-2, $fs-2, $fw-bold-300);
+                    margin-bottom: 0px;
+                }
             }
+            
             a {
                 border: 3px solid $color-black-2;
-                padding: $pd-1 $pd-3;
+                padding: 21px 37px;
                 @include text($color-black-2, $fs-23, $fw-bold-2);
             }
         }
         .video_item {
-           display: flex;
-           justify-content: center;
-           margin-top: 50px;
+            margin-top: 70px;
             img {
-                width: 50%;
-                object-fit: cover;
+                max-width: 1251px;
+                width: 100%;
             }
         }
     }
@@ -38,17 +47,14 @@
 @include responsive("extra-large"){
     .video {
             .video_item {
-                 img {
-                     width: 70%;
-                     object-fit: cover;
-                 }
              }
             
         }
 }
 @include responsive("large"){
     .video {
-       
+        height: 100%;
+        padding-bottom: 250px;
         .video_content {
             .video_title {
                 h3 {
@@ -56,10 +62,13 @@
                     letter-spacing: 2px;
                     @include text($color-black-2, $fs-40, $fw-bold);
                 }
-                p {
-                    padding: $pd-2;
-                    @include text($color-black-2, $fs-2, $fw-bold-300);
+                span {
+                    p {
+
+                        @include text($color-black-2, $fs-2, $fw-bold-300);
+                    }
                 }
+                
                 a {
                     border: 3px solid $color-black-2;
                     padding: $pd-1 $pd-3;
@@ -67,10 +76,6 @@
                 }
             }
             .video_item {
-                 img {
-                     width: 70%;
-                     object-fit: cover;
-                 }
              }
             
         }
@@ -86,39 +91,41 @@
                     letter-spacing: 2px;
                     @include text($color-black-2, $fs-4, $fw-bold);
                 }
-                p {
-                    padding: $pd-2;
-                    @include text($color-black-2, $fs-2, $fw-bold-300);
+                span {
+                    p {
+                        @include text($color-black-2, $fs-2, $fw-bold-300);
+                    }
                 }
+                
                 a {
                     border: 3px solid $color-black-2;
                     padding: $pd-1 $pd-3;
                     @include text($color-black-2, $fs-2, $fw-bold-2);
                 }
             }
-            .video_item {
-                 img {
-                     width: 70%;
-                     object-fit: cover;
-                 }
-             }
-            
         }
     }
 }
 @include responsive("small"){
     .video {
-       
+        position: unset !important;
+        padding-top: 2000px;
+        padding-bottom: 0px;
+        .video_image {
+            display: none !important;
+        }
         .video_content {
+            position: unset !important;
             .video_title {
                 h3 {
                     text-transform: uppercase; 
                     letter-spacing: 2px;
                     @include text($color-black-2, $fs-4, $fw-bold);
                 }
-                p {
-                    padding: $pd-2;
-                    @include text($color-black-2, $fs-1, $fw-bold-300);
+                span {
+                    p {
+                        @include text($color-black-2, $fs-1, $fw-bold-300);
+                    }
                 }
                 a {
                     border: 3px solid $color-black-2;
@@ -126,12 +133,6 @@
                     @include text($color-black-2, $fs-2, $fw-bold-2);
                 }
             }
-            .video_item {
-                 img {
-                     width: 70%;
-                     object-fit: cover;
-                 }
-             }
             
         }
     }

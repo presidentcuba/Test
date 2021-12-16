@@ -23,10 +23,10 @@ export default function BestProduct() {
                 <div className="title">
                     <div className="title_content">
                         <h3>BEST PRODUCT</h3>
-                        <p>
-                            How to create mobile-optimized videos in minutes. Not a designer, 
-                            every team makes a lot of videos Can be trimmed. Take the first 
-                        </p>
+                        <span>
+                            <p>How to create mobile-optimized videos in minutes. Not a designer,</p>
+                            <p>every team makes a lot of videos Can be trimmed. Take the first </p>
+                        </span>
                     </div>
                 </div>
                 <div className="detail">

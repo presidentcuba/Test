@@ -10,7 +10,7 @@ h5 {
     margin: 0px !important;
 }
 .footer {
-    padding: 50px 0px;
+    padding: 50px 20px;
     .footer_content {
         .footer_top {
             margin-bottom: 60px;
@@ -32,13 +32,13 @@ h5 {
                    
                     .row {
                         margin: 0!important;
+                        width: 100%;
                         ul {
-                            padding: 0px;
+                            padding: 0px 5px;
                             li {
                                 list-style: none;
                                 line-height: 2;
                                 width: 100%;
-                                padding-left: 70px;
                                 a {
                                     @include text($color-black-2, $fs-1, $fw-bold-300);
                                 }
@@ -110,14 +110,16 @@ h5 {
                 padding: 5px 0px;
                 display: flex;
                 align-items: center;
+                flex-direction: column;
                 border-top: 1px solid $color-white-3;
                 .content {
-                    flex: 1;
+                    width: 100%;
                     @include text($color-gray-4, $fs-1, $fw-bold-300);
                 }
                 .icon {
-                    flex: 1;
-                    text-align: right;
+                    margin-top: 10px;
+                    width: 100%;
+                    text-align: center;
                     img {
                         margin: 0px 3px;
                     }
@@ -127,5 +129,23 @@ h5 {
     }
 }
 @include responsive("small"){
-    
+    .footer {
+        .footer_bot {
+            padding: 5px 0px;
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            border-top: 1px solid $color-white-3;
+            .content {
+                width: 100%;
+                @include text($color-gray-4, $fs-1, $fw-bold-300);
+            }
+            .icon {
+                text-align: right;
+                img {
+                    margin: 0px 3px;
+                }
+            }
+        }
+    }
 }

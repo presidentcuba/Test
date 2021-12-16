@@ -3,14 +3,16 @@
     .story_image {
         img {
             max-width: 1920px;
+            height: 956px;
             width: 100%;
             text-align: center;
         }
     }
     .story_content {
         position: absolute;
-        top: 149px;
-        left: 335px;
+        top: 14%;
+        left: 17%;
+        right: 17%;
         .story_title {
             text-align: center;
             h3 {
@@ -84,15 +86,58 @@
         }
     }
 }
+@include responsive("xxl-large"){
+    .story {
+        .story_content { 
+            .story_item {
+                .item {
+                    .item_right {
+                        padding: 0px 30px;
+                        h5 {
+                            text-transform: uppercase; 
+                            padding-top: 50px;
+                            @include text($color-black-3, $fs-18, $fw-bold-2);
+                        }
+                        p {
+                            margin-bottom: 40px;
+                            @include text($color-black-3, $fs-1, $fw-bold-300);
+                        }
+                        a {
+                            @include text($color-black-3, $fs-18, $fw-bold-2);
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
 @include responsive("extra-large"){
     .story {
-       
         .story_content { 
+            .story_title {
+                text-align: center;
+                h3 {
+                    text-transform: uppercase; 
+                    letter-spacing: 1.5px;
+                    line-height: 60px;
+                    margin-bottom: 40px;
+                    @include text($color-yellow, $fs-45, $fw-bold);
+                }
+                span {
+                    display: block;
+                    padding-bottom: 47px;
+                    p {
+                        line-height: 30px;
+                        @include text($color-yellow, $fs-1, $fw-bold-300);
+                    }
+                }
+            }
             .story_item {
                 .item {
                     .item_right {
                         h5 {
                             text-transform: uppercase; 
+                            padding-top: 30px;
                             @include text($color-black-3, $fs-18, $fw-bold-2);
                         }
                         p {
@@ -111,6 +156,24 @@
 @include responsive("large"){
     .story {
         .story_content { 
+            .story_title {
+                text-align: center;
+                h3 {
+                    text-transform: uppercase; 
+                    letter-spacing: 1.5px;
+                    line-height: 60px;
+                    margin-bottom: 40px;
+                    @include text($color-yellow, $fs-45, $fw-bold);
+                }
+                span {
+                    display: block;
+                    padding-bottom: 47px;
+                    p {
+                        line-height: 30px;
+                        @include text($color-yellow, $fs-0, $fw-bold-300);
+                    }
+                }
+            }
             .story_item {
                 .item {
                     .item_right {
@@ -133,18 +196,20 @@
 }
 @include responsive("medium"){
     .story {
-        height: 950px;
+        padding-bottom: 400px;
         .story_content { 
             padding-top: 20px;
+            top: 6%;
             .story_title {
                 h3 {
                     @include text($color-yellow, $fs-40, $fw-bold);
                 }
-                p {
-                    padding-top: 20px;
-                    margin-bottom: 70px;
-                    @include text($color-yellow, $fs-1, $fw-bold-300);
+                span {
+                    p {
+                        @include text($color-yellow, $fs-0, $fw-bold-300);
+                    }
                 }
+                
             }
             .story_item {
                 .item {
@@ -154,8 +219,8 @@
                             @include text($color-black-3, $fs-16, $fw-bold-2);
                         }
                         p {
-                            margin-bottom: 20px;
-                            @include text($color-black-3, $fs-0, $fw-bold-300);
+                            margin-bottom: 70px;
+                            @include text($color-black-3, $fs-1, $fw-bold-300);
                         }
                         a {
                             @include text($color-black-3, $fs-16, $fw-bold-2);

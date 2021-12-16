@@ -9,7 +9,7 @@ export default function Footer() {
             <div className="footer_content">
               <div className="footer_top">
                 <div className="row">
-                  <div className="col-md-7 col-12 item">
+                  <div className="col-lg-7 col-md-6 col-sm-12 col-12 item">
                       <h5>what happened</h5>
                       <span>
                         <p>[공지] 개인 정보 처리 방침 변경 사전 안내</p>
@@ -19,9 +19,9 @@ export default function Footer() {
                         <p>[공지] 개인 정보 처리 방침 변경 사전 안내</p>
                       </span>
                   </div>
-                  <div className="col-md-5 col-12 item item_box">
+                  <div className="col-lg-5 col-md-6 col-sm-12 col-12 item item_box">
                       <div className="row">
-                        <div className="col-sm-3 col-6">
+                        <div className="col-md-3 col-sm-6 col-12">
                             <ul>
                               <li><h5>about us</h5></li>
                               <li><a href="#">회사 소개</a></li>
@@ -29,7 +29,7 @@ export default function Footer() {
                               <li><a href="#">상시 할인 혜택</a></li>
                             </ul>
                         </div>
-                        <div className="col-sm-3 col-6">
+                        <div className="col-md-3 col-sm-6 col-12">
                             <ul>
                               <li><h5>my order</h5></li>
                               <li><a href="#">내 주문</a></li>
@@ -39,7 +39,7 @@ export default function Footer() {
                               <li><a href="#">증빙 서류 발급</a></li>
                             </ul>
                         </div>
-                        <div className="col-sm-3 col-6">
+                        <div className="col-md-3 col-sm-6 col-12">
                           <ul>
                               <li><h5>my account</h5></li>
                               <li><a href="#">회원 정보 수정</a></li>
@@ -48,7 +48,7 @@ export default function Footer() {
                               <li><a href="#">쿠폰</a></li>
                             </ul>
                         </div>
-                        <div className="col-sm-3 col-6">
+                        <div className="col-md-3 col-sm-6 col-12">
                           <ul>
                               <li><h5>help</h5></li>
                               <li><a href="#">1 : 1 상담 내역</a></li>

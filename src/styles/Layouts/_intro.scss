@@ -13,10 +13,9 @@
         }
         .introduction_slogan {
             position: absolute;
-            width: 60%;
             height: 125px;
             top: 22%;
-            left: 174px;
+            left: 9%;
             h5 {
                 text-transform: uppercase;
                 letter-spacing: 5px;
@@ -53,7 +52,6 @@
     .introduction {
         .introduction_content {
             .introduction_slogan {
-                width: 50%;
                 top: 12%;
                 h5 {
                     @include text($color-white-0, $fs-40, $fw-bold-2);
@@ -70,8 +68,7 @@
     .introduction {
         .introduction_content {
             .introduction_slogan {
-                width: 70%;
-                left: 20%;
+                left: 9%;
                 h5 {
                     @include text($color-white-0, $fs-3, $fw-bold-2);
                     margin-bottom: $mg-16;
@@ -94,8 +91,7 @@
                 }
             }
             .introduction_slogan {
-                width: 70%;
-                left: 15%;
+                left: 9%;
                 top: 12%;
                 text-align: center;
                 h5 {

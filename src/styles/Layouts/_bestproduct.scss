@@ -3,13 +3,15 @@
     .product_image {
         img {
             max-width: 1920px;
-            height: 1073px;
+            max-height: 1073px;
+            height: 100%;
             width: 100%;
         }
     }
     .best_product_content { 
         position: absolute;
-        top: 150px;
+        top: 110px;
+        left: 9%;
         right: 9%;
         .title {
             display: flex;
@@ -17,17 +19,21 @@
             justify-content: center;
             .title_content {
                 text-align: center;
-                width: 50%;
                 h3 {
                     letter-spacing: 1.5px;
-                    margin-bottom: 50px;
+                    margin: 20px 0px;
                     @include text($color-orange-1, $fs-19, $fw-bold);
                 }
-                p {
-                    padding-bottom: 49px;
-                    line-height: 32px;
-                    @include text($color-orange-1, $fs-2, $fw-normal)
+                span {
+                    display: block;
+                    padding-bottom: 55px;
+                    p {
+                        line-height: 32px;
+                        padding-bottom: 0px;
+                        @include text($color-orange-1, $fs-2, $fw-normal)
+                    }
                 }
+               
             }
         }
         .detail {
@@ -55,7 +61,6 @@
                         background-color: $color-white-0;
                         padding: 10px 10px;
                         .thread_title {
-                            width: 50%;
                             line-height: 25px;
                             margin-bottom: $mg;
                             @include text($color-black-3, $fs-2, $fw-bold-2);
@@ -96,7 +101,6 @@
 @include responsive("extra-large"){
    .best_product {
         .best_product_content {
-            padding: 40px 30px;
             .title {
                 margin-top: -105px;
             }
@@ -106,6 +110,7 @@
                         .thread_box {
                             .thread_title {
                                 width: 75%;
+                                font-size: 16px;
                             }
                         }
                     }
@@ -116,9 +121,7 @@
 }
 @include responsive("large"){
     .best_product {
-        padding: 75px 0px;
         .best_product_content {
-            padding: 40px 30px;
             .title {
                 margin-top: -68px;
                 .title_content {
@@ -127,10 +130,12 @@
                         letter-spacing: 1.5px;
                         @include text($color-orange-1, $fs-40, $fw-bold);
                     }
-                    p {
-                        padding-bottom: 33px;
-                        @include text($color-orange-1, $fs-16, $fw-normal)
+                    span {
+                        p {
+                            @include text($color-orange-1, $fs-16, $fw-normal)
+                        }
                     }
+                   
                 }
                 
             }
@@ -176,9 +181,10 @@
 }
 @include responsive("medium"){
     .best_product {
-        padding: 75px 0px;
+        // position: unset !important;
+        // margin-top: 120px;
         .best_product_content {
-            padding: 40px 30px;
+            // position: unset !important;
             .title {
                 margin-top: -85px;
                 .title_content {
@@ -186,10 +192,15 @@
                         letter-spacing: 1.5px;
                         @include text($color-orange-1, $fs-3, $fw-bold);
                     }
-                    p {
+                    span {
+                        display: block;
                         padding-bottom: 33px;
-                        @include text($color-orange-1, $fs-16, $fw-normal)
+                        p {  
+                            @include text($color-orange-1, $fs-1, $fw-normal);
+                            line-height: 25px;
+                        }
                     }
+                    
                 }
                 
             }
@@ -209,9 +220,14 @@
 }
 @include responsive("small"){
     .best_product {
-        padding: 75px 0px;
+         position: unset !important;
+        margin-top: 120px;
+        .product_image {
+            display: none;
+        }
         .best_product_content {
-            padding: 40px 30px;
+            position: unset !important;
+            text-align: center !important;
             .title {
                 margin-top: -85px;
                 .title_content {
